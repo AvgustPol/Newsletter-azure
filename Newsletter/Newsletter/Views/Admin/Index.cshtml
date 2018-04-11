@@ -1,0 +1,16 @@
+﻿@model List<string>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Admin panel</h2>
+
+
+@foreach (string email in Model)
+{
+    <br />
+    <p>@email</p>
+}
+
+<li>@Html.ActionLink("Send message", "Index", "EmailSender")</li>
