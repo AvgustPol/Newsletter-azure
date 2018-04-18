@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.Identity;
+using Newsletter.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace Newsletter.Controllers
     {
         public ActionResult Index()
         {
+
             return View();
         }
 

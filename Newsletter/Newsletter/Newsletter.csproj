@@ -194,6 +194,7 @@
     <Compile Include="Controllers\EmailSenderController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -208,6 +209,14 @@
     <Compile Include="Migrations\201804111845353_Deleted IsAdmin.cs" />
     <Compile Include="Migrations\201804111845353_Deleted IsAdmin.Designer.cs">
       <DependentUpon>201804111845353_Deleted IsAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804181438120_Add isSub.cs" />
+    <Compile Include="Migrations\201804181438120_Add isSub.Designer.cs">
+      <DependentUpon>201804181438120_Add isSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804181440401_try 2.0 add isSub.cs" />
+    <Compile Include="Migrations\201804181440401_try 2.0 add isSub.Designer.cs">
+      <DependentUpon>201804181440401_try 2.0 add isSub.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -281,6 +290,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\UserIp\" />
+    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -304,6 +314,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804111845353_Deleted IsAdmin.resx">
       <DependentUpon>201804111845353_Deleted IsAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804181438120_Add isSub.resx">
+      <DependentUpon>201804181438120_Add isSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804181440401_try 2.0 add isSub.resx">
+      <DependentUpon>201804181440401_try 2.0 add isSub.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

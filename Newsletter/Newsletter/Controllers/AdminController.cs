@@ -15,7 +15,10 @@ namespace Newsletter.Controllers
 
             foreach (ApplicationUser user in applicationUsers.Users)
             {
-                emails.Add(user.Email); 
+                if (user.isSub)
+                {
+                    emails.Add(user.Email);
+                }
             }
 
             return View(model : emails);
