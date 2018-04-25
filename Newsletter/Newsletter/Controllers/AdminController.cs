@@ -15,9 +15,9 @@ namespace Newsletter.Controllers
 
             foreach (ApplicationUser user in applicationUsers.Users)
             {
-                if (user.isSub)
+                //if (user.isSub)
                 {
-                    emails.Add(user.Email);
+                //    emails.Add(user.Email);
                 }
             }
 

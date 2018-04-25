@@ -10,7 +10,6 @@ namespace Newsletter.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "Newsletter.Models.ApplicationDbContext";
         }
 
         protected override void Seed(Newsletter.Models.ApplicationDbContext context)

@@ -1,4 +1,5 @@
-﻿using Newsletter.Models;
+﻿using Microsoft.AspNet.Identity;
+using Newsletter.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,17 +10,23 @@ namespace Newsletter.Controllers
 {
     [Authorize]
     public class UserController : Controller
-    {
-        
+    {        
         public ActionResult Index()
         {
             ApplicationDbContext applicationUsers = new ApplicationDbContext();
+            var user = applicationUsers.Users.First(x => x.Id == User.Identity.GetUserId());
 
-            var user = UserManager.FindById(User.Identity.GetUserId());
+            return View(model : user);
+        }
+        
+        public void StartSubscrition()
+        {
+            ApplicationDbContext applicationUsers = new ApplicationDbContext();
+            var currentUser = applicationUsers.Users.First(x => x.Id == User.Identity.GetUserId());
 
-            var userIsSub = applicationUsers.Users.First(x => x.isSub);
+            //currentUser.isSub = true;
 
-            return View();
+
         }
     }
 }
